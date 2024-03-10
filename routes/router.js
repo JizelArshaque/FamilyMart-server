@@ -9,7 +9,7 @@ const jwtMiddleware = require('../Middleware/jwtMiddleware')
 
 // register w post
 router.post('/register',usercontroller.registerController)
-// login w post
+// login w post  bcs we need to post token as well
 router.post('/login',usercontroller.loginController)
 
 // get all products route

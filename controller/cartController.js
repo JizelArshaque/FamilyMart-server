@@ -4,7 +4,7 @@ const cartmodel = require('../Model/cartModel')
 exports.addToCartController = async(req,res)=>{
     // First get items for the operation
     const userId = req.payload
-    const {id, title, price, description, category, image,rating,quantity} = req.body
+    const {id, title, price, description, category, image, rating, quantity} = req.body
 
     try {
         const existingProduct = await cartmodel.findOne({id,userId})
